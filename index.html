@@ -12,27 +12,56 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- css-styles -->
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Profile card component</title>
   </head>
+
   <body>
     <article class="profile-card">
       <section class="profile__bio">
-        <img src="images/image-victor.jpg" alt="Victor" class="profile__img" />
-        <h1 class="profile__name">
+        <div class="img-wrapper">
+          <img
+            src="images/image-victor.jpg"
+            alt="Victor"
+            class="profile__img"
+          />
+          <div class="overlay"></div>
+        </div>
+        <p class="profile__name">
           Victor Crest
           <span class="profile__age">26</span>
-        </h1>
+        </p>
         <p class="profile__location">
           London
         </p>
       </section>
-      <section class="stats">
-        80K Followers 803K Likes 1.4K Photos
+
+      <section class="profile__stats">
+        <div class="stat__item">
+          <span class="stat__line">80K</span>
+          <span class="stat__title">Followers</span>
+        </div>
+        <div class="stat__item">
+          <span class="stat__line">803K</span>
+          <span class="stat__title">Likes</span>
+        </div>
+        <div class="stat__item">
+          <span class="stat__line">1.4K</span>
+          <span class="stat__title">Photos</span>
+        </div>
       </section>
     </article>
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
